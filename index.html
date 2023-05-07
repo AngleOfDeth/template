@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Test Template</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__box">
+        <!--  left header section  -->
+        <section class="header__logo">
+          <img src="./images/logo.png" alt="website logo" />
+
+          <button class="lang__btn">EN</button>
+        </section>
+
+        <!-- center header section  -->
+        <section class="header__searchBox">
+          <section class="search__box">
+            <!-- category section  -->
+            <div class="category__box">
+              <p class="category__title">
+                All Categories
+                <span class="down__arrow">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 -4.5 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>arrow_down [#338]</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-220.000000, -6684.000000)"
+                        fill="#fff"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583"
+                            id="arrow_down-[#338]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </p>
+
+              <!-- <ul class="category-list" >
+                <li class="category__item"> Best </li>
+              </ul> -->
+            </div>
+            <!-- search box  section -->
+            <div class="form__searchBox">
+              <input
+                type="text"
+                id="form __searchBar"
+                class="searchBar"
+                placeholder="Search"
+              />
+              <button class="submit">
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z"
+                    fill="#000000"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <!-- category box  -->
+          </section>
+        </section>
+
+        <!-- right header section  -->
+        <section class="header__helpers">
+          <span class="bell__icon">
+            <svg
+              width="800px"
+              height="800px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 17.5V18.5C9 20.1569 10.3431 21 12 21C13.6569 21 15 20.1569 15 18.5V17.5M5.99999 8.5C5.99999 5.18629 8.68628 3.5 12 3.5C15.3137 3.5 18 5.18629 18 8.5C18 10.4392 18.705 12.6133 19.4316 14.3389C20.0348 15.7717 19.0222 17.5 17.4676 17.5H6.53237C4.97778 17.5 3.96518 15.7717 4.56842 14.3389C5.29493 12.6133 5.99999 10.4392 5.99999 8.5Z"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span class="heart__icon">
+            <svg
+              width="800px"
+              height="800px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 20C12 20 21 16 21 9.71405C21 6 18.9648 4 16.4543 4C15.2487 4 14.0925 4.49666 13.24 5.38071L12.7198 5.92016C12.3266 6.32798 11.6734 6.32798 11.2802 5.92016L10.76 5.38071C9.90749 4.49666 8.75128 4 7.54569 4C5 4 3 6 3 9.71405C3 16 12 20 12 20Z"
+                stroke="#fff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </span>
+
+          <span class="basket__icon">
+            <svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="#fff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.50968 8.46745H4.67958C3.66885 8.46745 2.84949 9.28681 2.84949 10.2975V14.2717C2.84949 15.2425 3.23511 16.1735 3.92153 16.8599L5.43763 18.376C6.12405 19.0624 7.05504 19.448 8.02578 19.448H15.9741C16.9449 19.448 17.8759 19.0624 18.5623 18.376L20.0784 16.8599C20.7648 16.1735 21.1504 15.2425 21.1504 14.2717V10.2975C21.1504 9.28681 20.3311 8.46745 19.3203 8.46745H17.4903M6.50968 8.46745V5.72231C6.50968 4.71157 7.32904 3.89221 8.33977 3.89221H15.6602C16.6709 3.89221 17.4903 4.71157 17.4903 5.72231V8.46745M6.50968 8.46745H17.4903"
+                stroke="#1C1C1C"
+                stroke-width="1.69905"
+                stroke-linecap="round"
+              />
+              <path
+                d="M10.1699 13.0427H13.8301"
+                stroke="#1C1C1C"
+                stroke-width="1.69905"
+                stroke-linecap="round"
+              />
+            </svg>
+            <span class="basket__counter"> 1 </span>
+          </span>
+
+          <span class="user__loginImage">
+            <img src="./images/man.png" alt="user image" />
+
+            <span class="down__arrow">
+              <svg
+                width="800px"
+                height="800px"
+                viewBox="0 -4.5 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>arrow_down [#338]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-220.000000, -6684.000000)"
+                    fill="#fff"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583"
+                        id="arrow_down-[#338]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </span>
+        </section>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__box">
+        <section class="left__box">
+
+          <p class="left__box__title">Explore</p>
+
+          <button class="category__btn">
+            <span>
+              <svg
+                width="800px"
+                height="800px"
+                viewBox="0 0 24 24"
+                fill="#fff"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  opacity="0.34"
+                  d="M6 10C8.20914 10 10 8.20914 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  opacity="0.34"
+                  d="M18 22C20.2091 22 22 20.2091 22 18C22 15.7909 20.2091 14 18 14C15.7909 14 14 15.7909 14 18C14 20.2091 15.7909 22 18 22Z"
+                  stroke="#fff"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="category__btnTitle">Categories </span>
+            </span>
+            <span class="arrow__right__icon">
+              <svg
+                width="800px"
+                height="800px"
+                viewBox="-4.5 0 20 20"
+                version="1.1"
+              >
+                <title>arrow_right [#336]</title>
+                <desc>Created with Sketch.</desc>
+                <defs></defs>
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="#fff"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dribbble-Light-Preview"
+                    transform="translate(-305.000000, -6679.000000)"
+                    fill="#fff"
+                  >
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769"
+                        id="arrow_right-[#336]"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+          </button>
+
+          <ul class="sideBar__menu">
+            <li class="sideBar__item">
+              <svg
+                height="800px"
+                width="800px"
+                version="1.1"
+                fill = "#fff"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 195.803 195.803"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <g>
+                      <path
+                        style="fill: #010002"
+                        d="M195.803,104.175l-15.958-18.141l9.688-19.612l-19.494-9.616l1.525-23.685l-24.182-1.557
+                   l-7.315-21.616l-20.915,7.086L104.173,0.002L86.504,15.541L65.146,4.991L54.939,25.648l-21.82-1.396L31.68,46.67L8.668,54.461
+                   l7.716,22.769L0,91.628l14.315,16.277l-10.604,21.48l21.978,10.851l-1.442,22.457l21.552,1.385l7.383,21.777l22.887-7.748
+                   l15.561,17.694l16.745-14.731l19.727,9.742l10.275-20.815l24.322,1.568l1.492-23.313l20.389-6.907l-7.125-21.033L195.803,104.175
+                   z M158.303,143.743l-1.364,21.273l-22.268-1.424l-9.369,18.975l-17.898-8.84l-15.21,13.378l-14.208-16.162l-20.947,7.097
+                   l-6.735-19.852l-19.512-1.249l1.306-20.414l-20.135-9.942l9.706-19.644L8.7,92.197l14.838-13.048l-7.054-20.829l21.083-7.143
+                   l1.303-20.392l19.784,1.267l9.284-18.814l19.541,9.656l16.141-14.197l13.618,15.489l18.975-6.428l6.671,19.687l22.139,1.417
+                   l-1.385,21.638l17.654,8.722L172.504,87l14.609,16.617L170.3,118.401l6.471,19.082L158.303,143.743z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        style="fill: #010002"
+                        d="M120.707,90.797c-9.18,0-16.763,7.791-16.763,21.784c0.1,13.879,7.58,20.818,16.23,20.818
+                   c8.868,0,16.552-7.258,16.552-21.895C136.73,98.27,130.431,90.797,120.707,90.797z M120.389,127.742
+                   c-5.766,0-9.183-6.725-9.076-15.582c0-8.761,3.203-15.7,9.076-15.7c6.51,0,8.965,7.047,8.965,15.489
+                   C129.354,121.121,126.584,127.742,120.389,127.742z"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        style="fill: #010002"
+                        d="M91.558,82.791c0-13.238-6.406-20.722-16.123-20.722c-9.183,0-16.763,7.802-16.763,21.681
+                   c0.107,13.983,7.58,20.922,16.23,20.922C83.87,104.676,91.558,97.415,91.558,82.791z M66.144,83.432
+                   c0-8.761,3.103-15.7,8.969-15.7c6.514,0,8.969,7.047,8.969,15.489c0,9.176-2.777,15.797-8.969,15.797
+                   C69.247,99.014,65.93,92.29,66.144,83.432z"
+                      />
+                    </g>
+                    <g>
+                      <polygon
+                        style="fill: #010002"
+                        points="115.049,62.07 74.258,133.829 80.234,133.829 121.03,62.07 			"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              best Offers
+            </li>
+            <li class="sideBar__item"> <svg width="800px" height="800px" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 21V16C14.5 15.4477 14.0523 15 13.5 15H10.5C9.94772 15 9.5 15.4477 9.5 16V21" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 11V17C5 18.8856 5 19.8284 5.58579 20.4142C6.17157 21 7.11438 21 9 21H15C16.8856 21 17.8284 21 18.4142 20.4142C19 19.8284 19 18.8856 19 17V11" stroke="#222222"/>
+              <path d="M4.62127 4.51493C4.80316 3.78737 4.8941 3.42359 5.16536 3.21179C5.43663 3 5.8116 3 6.56155 3H17.4384C18.1884 3 18.5634 3 18.8346 3.21179C19.1059 3.42359 19.1968 3.78737 19.3787 4.51493L20.5823 9.32938C20.6792 9.71675 20.7276 9.91044 20.7169 10.0678C20.6892 10.4757 20.416 10.8257 20.0269 10.9515C19.8769 11 19.6726 11 19.2641 11V11C18.7309 11 18.4644 11 18.2405 10.9478C17.6133 10.8017 17.0948 10.3625 16.8475 9.76781C16.7593 9.55555 16.7164 9.29856 16.6308 8.78457V8.78457C16.6068 8.64076 16.5948 8.56886 16.5812 8.54994C16.5413 8.49439 16.4587 8.49439 16.4188 8.54994C16.4052 8.56886 16.3932 8.64076 16.3692 8.78457L16.2877 9.27381C16.2791 9.32568 16.2747 9.35161 16.2704 9.37433C16.0939 10.3005 15.2946 10.9777 14.352 10.9995C14.3289 11 14.3026 11 14.25 11V11C14.1974 11 14.1711 11 14.148 10.9995C13.2054 10.9777 12.4061 10.3005 12.2296 9.37433C12.2253 9.35161 12.2209 9.32568 12.2123 9.27381L12.1308 8.78457C12.1068 8.64076 12.0948 8.56886 12.0812 8.54994C12.0413 8.49439 11.9587 8.49439 11.9188 8.54994C11.9052 8.56886 11.8932 8.64076 11.8692 8.78457L11.7877 9.27381C11.7791 9.32568 11.7747 9.35161 11.7704 9.37433C11.5939 10.3005 10.7946 10.9777 9.85199 10.9995C9.82887 11 9.80258 11 9.75 11V11C9.69742 11 9.67113 11 9.64801 10.9995C8.70541 10.9777 7.90606 10.3005 7.7296 9.37433C7.72527 9.35161 7.72095 9.32568 7.7123 9.27381L7.63076 8.78457C7.60679 8.64076 7.59481 8.56886 7.58122 8.54994C7.54132 8.49439 7.45868 8.49439 7.41878 8.54994C7.40519 8.56886 7.39321 8.64076 7.36924 8.78457V8.78457C7.28357 9.29856 7.24074 9.55555 7.15249 9.76781C6.90524 10.3625 6.38675 10.8017 5.75951 10.9478C5.53563 11 5.26905 11 4.73591 11V11C4.32737 11 4.12309 11 3.97306 10.9515C3.58403 10.8257 3.31078 10.4757 3.28307 10.0678C3.27239 9.91044 3.32081 9.71675 3.41765 9.32938L4.62127 4.51493Z" stroke="#222222"/>
+              </svg> Sell With Us</li>
+            <li class="sideBar__item">
+              
+<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" stroke="#000000" fill="none"><path d="M19.55,43.93H38.1a2,2,0,0,0,2-2V16.28a2,2,0,0,0-2-2H8.68a2,2,0,0,0-2,2V41.91a2,2,0,0,0,2,2h2.6"/><path d="M44.33,43.93H40.19V23.23H50a1,1,0,0,1,.76.35l6.3,7.55a1,1,0,0,1,.23.64V43.93H53"/><ellipse cx="15.53" cy="45.23" rx="4.44" ry="4.5"/><ellipse cx="48.58" cy="45.23" rx="4.44" ry="4.5"/></svg>
+              Track Order</li>
+            <li class="sideBar__item">
+              <svg fill="#000000" width="800px" height="800px" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>book</title>
+                <path d="M0 23.938v-13.5s1.688-2.531 6.125-2.531c4.469 0 5.875 2.406 5.875 2.406s1.406-2.406 5.875-2.406c4.438 0 6.125 2.531 6.125 2.531v13.5s-2.969-2.188-6.188-2.188c-3.188 0-5.813 2.344-5.813 2.344s-2.625-2.344-5.813-2.344c-3.219 0-6.188 2.188-6.188 2.188zM2.031 10.969v9.813s1.281-0.969 4.344-0.969c3.031 0 4.625 1.813 4.625 1.813v-10.219s-2.156-1.563-4.875-1.563c-2.688 0-4.094 1.125-4.094 1.125zM13 11.406v10.219s1.5-1.813 4.625-1.813c3.094 0 4.344 0.969 4.344 0.969v-9.813s-1.406-1.125-4.094-1.125c-2.719 0-4.875 1.563-4.875 1.563z"></path>
+                </svg>Blog</li>
+          </ul>
+
+          <div class="setting">
+            <button class="account__btn">   Account </button>
+            <button class="setting__btn"> Setting  </button>
+          </div>
+
+        </section>
+
+        <section class="right__box">
+
+          <div class="top__box">
+            
+                  <!-- product slider section  -->
+                  <div class="slider__box">
+                    <div class="slider">
+                      <swiper-container class="mySwiper" navigation="true">
+                        <swiper-slide>
+                          <div class="product__img">
+                            <img src="./images/Menswear.png" alt="product image" />
+                          </div>
+        
+                          <div class="product__info">
+                            <p class="product__title">Special Offers</p>
+                            <h3 class="prodcut__category">Men T-Sherts</h3>
+                            <p class="prodcut__desc">
+                              Best T-Sherts Discount <b>35% Off</b> On All Mens
+                              T-Sherts!
+                            </p>
+        
+                            <div class="company__logos">
+                              <img src="./images/fila.png" alt="logo" />
+                              <img src="./images/fila.png" alt="logo" />
+                              <img src="./images/fila.png" alt="logo" />
+                            </div>
+                          </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <div class="product__img">
+                            <img src="./images/Menswear.png" alt="product image" />
+                          </div>
+        
+                          <div class="product__info">
+                            <p class="product__title">Special Offers</p>
+                            <h3 class="prodcut__category">Men T-Sherts</h3>
+                            <p class="prodcut__desc">
+                              Best T-Sherts Discount <b>35% Off</b> On All Mens
+                              T-Sherts!
+                            </p>
+        
+                            <div class="company__logos">
+                              <img src="./images/fila.png" alt="logo" />
+                              <img src="./images/fila.png" alt="logo" />
+                              <img src="./images/fila.png" alt="logo" />
+                            </div>
+                          </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                          <div class="product__img">
+                            <img src="./images/Menswear.png" alt="product image" />
+                          </div>
+        
+                          <div class="product__info">
+                            <p class="product__title">Special Offers</p>
+                            <h3 class="prodcut__category">Men T-Sherts</h3>
+                            <p class="prodcut__desc">
+                              Best T-Sherts Discount <b>35% Off</b> On All Mens
+                              T-Sherts!
+                            </p>
+        
+                            <div class="company__logos">
+                              <img src="./images/fila.png" alt="logo" />
+                              <img src="./images/fila.png" alt="logo" />
+                              <img src="./images/fila.png" alt="logo" />
+                            </div>
+                          </div>
+                        </swiper-slide>
+                   
+                      </swiper-container>
+                    </div>
+                  </div>
+        
+                  <!-- banner section  -->
+                  <div class="banner__img">
+                    <img src="./images/banner.png" alt="banner" />
+                  </div>
+          </div>
+
+          <div class="bottom__box">
+            <div class="products__title__slider"> 
+              <h3 class="products__title"> Top <span> Products </span>  </h3>  
+              <a href="#" class="showAll__Link" > View All </a>
+            </div>  
+
+
+            <div class="multiItem__slider">
+              <swiper-container class="mySwiper"  space-between="30"
+              slides-per-view="4">
+     
+              <swiper-slide class="card" >
+                <div class="card__imageBox" >
+                  <img src="./images/product_image.png" alt="card__img">
+                  <span class="card__discount" > Free Shopping </span>
+                </div>
+                <p class="card__desc">Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+              
+                <div class="card__price">
+              
+                  <span class="card__colorButtons"> 
+                    <button class="pink"> </button>
+                    <button class="gray"> </button>
+                  </span>
+              
+                  <span class="card__productPrice"> 129,00 </span>
+              
+                </div>
+              </swiper-slide>
+              <swiper-slide class="card" >
+                <div class="card__imageBox" >
+                  <img src="./images/product_image.png" alt="card__img">
+                </div>
+                <p class="card__desc">Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+              
+                <div class="card__price">
+              
+                  <span class="card__colorButtons"> 
+                    <button class="pink"> </button>
+                    <button class="gray"> </button>
+                  </span>
+              
+                  <span class="card__productPrice"> 129,00 </span>
+              
+                </div>
+              </swiper-slide>
+              <swiper-slide class="card" >
+                <div class="card__imageBox" >
+                  <img src="./images/product_image.png" alt="card__img">
+                  <span class="card__discount_temp" > % </span>
+                </div>
+                <p class="card__desc">Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+              
+                <div class="card__price">
+              
+                  <span class="card__colorButtons"> 
+                    <button class="pink"> </button>
+                    <button class="gray"> </button>
+                  </span>
+              
+                  <span class="card__productPrice"> 129,00 </span>
+              
+                </div>
+              </swiper-slide>
+              <swiper-slide class="card" >
+                <div class="card__imageBox" >
+                  <img src="./images/product_image.png" alt="card__img">
+                </div>
+                <p class="card__desc">Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+              
+                <div class="card__price">
+              
+                  <span class="card__colorButtons"> 
+                    <button class="pink"> </button>
+                    <button class="gray"> </button>
+                  </span>
+              
+                  <span class="card__productPrice"> 129,00 </span>
+              
+                </div>
+              </swiper-slide>
+              <swiper-slide class="card" >
+  <div class="card__imageBox" >
+    <img src="./images/product_image.png" alt="card__img">
+    <span class="card__discount" > </span>
+  </div>
+  <p class="card__desc">Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit.</p>
+
+  <div class="card__price">
+
+    <span class="card__colorButtons"> 
+      <button class="pink"> </button>
+      <button class="gray"> </button>
+    </span>
+
+    <span class="card__productPrice"> 129,00 </span>
+
+  </div>
+</swiper-slide>
+            </swiper-container>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+      
+    </main>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+
+   
